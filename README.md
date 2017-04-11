@@ -16,4 +16,4 @@ The controls are made with controllers, keyboard is not supported, so to play, 2
 
 ## Bugs
 
-As the game was made in 48h, it's strongly possible that you will have some bugs (feel free to path it ! :) )
+As the game was made in 48h, it's strongly possible that you will have some bugs (feel free to patch it ! :) )
