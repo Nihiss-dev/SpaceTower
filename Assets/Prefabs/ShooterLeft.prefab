@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1077835838879182}
+  m_IsPrefabParent: 1
+--- !u!1 &1077835838879182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4631590571613182}
+  - component: {fileID: 212449384929169038}
+  - component: {fileID: 114275808386665772}
+  - component: {fileID: 114117976828688812}
+  - component: {fileID: 114031389012333238}
+  m_Layer: 0
+  m_Name: ShooterLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1093877063568540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224128972598106752}
+  - component: {fileID: 114171637656039200}
+  - component: {fileID: 114278034872277002}
+  - component: {fileID: 114651906630256268}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4631590571613182
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077835838879182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.3, y: -3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224128972598106752}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114031389012333238
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077835838879182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef357dc45935eef4eaa38a9238d2747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114117976828688812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077835838879182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5663c1343074e574c9f2cd1251149ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114171637656039200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093877063568540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9112aa1f54000741bec232058865743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coroutine: {fileID: 0}
+  volume: 1
+  pitch: 1
+  panning: 1
+--- !u!114 &114275808386665772
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077835838879182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f12e16da5133f408007a4a40c6a7a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootPower: 2000
+  projectile:
+  - {fileID: 1102819855993156, guid: 18f6cff1e39cebd4da07f993fbf7f211, type: 2}
+  - {fileID: 1136321556720248, guid: 130a075c955f17c46849317145d8fb56, type: 2}
+  - {fileID: 1950049706624224, guid: 90d94ad2ee45dcb408dc58b4e0a410ee, type: 2}
+  - {fileID: 1478526204545028, guid: 53e252f89b67e434ca77ba5650537937, type: 2}
+  spawnPoint: {fileID: 4631590571613182}
+  shooterSide: 0
+--- !u!114 &114278034872277002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093877063568540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46885afcbdf95974080e614eeab2d925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundSets:
+  - soundSetName: Shoot
+    mixer:
+      mixerGroup: {fileID: 243203816097887058, guid: c75e7dbacc79a04459c031d87b7f383a,
+        type: 2}
+    _soundLoops: 0
+    _randomSound: 1
+    _randomizePitch: 1
+    randomPitchRange: 0.264
+    _audioclips:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    envelope:
+      envelope:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0.00005722046
+          value: 0.6091156
+          inSlope: 0.7711138
+          outSlope: 0.7711138
+          tangentMode: 34
+        - serializedVersion: 2
+          time: 0.49279785
+          value: 0.9890747
+          inSlope: 0.7711138
+          outSlope: 0.7711138
+          tangentMode: 34
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      Automationtarget: 1
+  - soundSetName: MorePoints
+    mixer:
+      mixerGroup: {fileID: 243492844273311746, guid: c75e7dbacc79a04459c031d87b7f383a,
+        type: 2}
+    _soundLoops: 0
+    _randomSound: 0
+    _randomizePitch: 0
+    randomPitchRange: 0
+    _audioclips:
+    - {fileID: 0}
+    envelope:
+      envelope:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0.0053173723
+          value: 0.70568556
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 0.2889399
+          value: 0.70745575
+          inSlope: 0.05033353
+          outSlope: 0.05033353
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 0.71131504
+          value: 0.99261713
+          inSlope: -0.0000005364925
+          outSlope: -0.0000005364925
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 0.9924072
+          value: 0.9961594
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      Automationtarget: 2
+--- !u!114 &114651906630256268
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093877063568540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca21ac7d08338224386bb075ce42ac88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &212449384929169038
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077835838879182}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: 1b6c01f8a2bfd8c4c9686cb084745a38, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+--- !u!224 &224128972598106752
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093877063568540}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8594475, y: 0.8594475, z: 0.8594475}
+  m_Children: []
+  m_Father: {fileID: 4631590571613182}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 379.17804, y: 327.8725}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
